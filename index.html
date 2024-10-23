@@ -1,93 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sidebar</title>
- <link rel="icon" type="image/png" href="Me@Manuggal.png">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <title>Sidebar</title>
+    <link rel="icon" type="image/png" href="Me@Manuggal.png">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background-image: url('Balwarte.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        div {
+            position: fixed;
+            top: 30%;
+            left: 45%;
+            background: transparent;
+        }
+        h1 {
+            font-family: Verdana, sans-serif;
+            font-size: 300%;
+            color: white;
+        }
+        h2 {
+            font-size: 150%;
+            color: white;
+            text-align: center;
+        }
+        p {
+            font-size: 100%;
+            color: white;
+            text-align: center;
+        }
+        blockquote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #333;
+            padding: 20px;
+            background-color: #fff;
+            border-left: 5px solid #ccc;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-image: url('Balwarte.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-
- div {
- position: fixed;
-        top: 30%;
-        left: 45%;
-        background: transparent;
-    }
-
-
-h1 {
-	font-family: Verdana, sans-serif;
-	font-size: 300%;
-	color: white;
-}
-
-h2 {
-	font-size: 150%;
-	color: white;
-	position: center;
-}
-
-p {
-	font-size: 100%;
-	color: white;
-	position: center;
-}
-
-
-</style>
-
-<div>
-<p>.</p>
-</div>
-
-
-
-<!-- partial:index.partial.html -->
-<nav class="sidenav">
-    <ul class="main-buttons">
-
-   
-      </li>
-<li>
-        <i class="fa fa-circle fa-2x"></i>
-      <a href='https://account.activedirectory.windowsazure.com/applications/signin/03d84850-9e34-425c-8a43-36895a622edb?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">STLukes</a></li>
-         <ul class="hidden">
-        </ul>
-      </li>
-<li>
-        <i class="fa fa-circle fa-2x"></i>
-  <a href='https://account.activedirectory.windowsazure.com/applications/signin/7cc7482b-41c0-41bf-914c-6648a7db717b?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">OHH</a></li>
-         <ul class="hidden">
-        </ul>
-      </li>
-<li>
-
-        <i class="fa fa-circle fa-2x"></i>
-  <a href='https://account.activedirectory.windowsazure.com/applications/signin/4792ba22-7ac0-4c64-bdd0-c21aca6ae69c?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">Aerocare</a></li>
-         <ul class="hidden">
-        </ul>
-      </li>
-
-<li>
-
-        <i class="fa fa-circle fa-2x"></i>
-       Myapps
-        <ul class="hidden">
-<li><a href='https://launcher.myapps.microsoft.com/api/signin/438d4908-e073-47b6-ab34-c5d155eba961?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">Parachute</a></li>
- <li><a href='https://account.activedirectory.windowsazure.com/applications/signin/82e5a33a-010a-4e51-ae16-b640c34b0f99?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">Purecloud</a></li>
- <li><a href='https://outlook.office.com/owa/?realm=adapthealth.com&exsvurl=1&ll-cc=1033&modurl=0&login_hint=raymond.tariao@adapthealth.com' style="color: White;">Outlook</a></li>
- <li><a href='https://aka.ms/mstfw?login_hint_safe=raymond.tariao@adapthealth.com' style="color: White;">Teams</a></li>
- <li><a href='https://www.noridianmedicareportal.com/group/end-user/sameandsimilar' style="color: White;">Noridian</a></li>
-<li><a href='https://toolbox.adapthealth.com/home' style="color: White;">Same and Sim</a></li>
+<body>
+    <blockquote id="quote"></blockquote>
+    <script src="quotes.js"></script>
+    <div>
+        <p>.</p>
+    </div>
+    <!-- partial:index.partial.html -->
+    <nav class="sidenav">
+        <ul class="main-buttons">
+            <li>
+                <i class="fa fa-circle fa-2x"></i>
+                <a href='https://account.activedirectory.windowsazure.com/applications/signin/03d84850-9e34-425c-8a43-36895a622edb?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">STLukes</a>
+                <ul class="hidden"></ul>
+            </li>
+            <li>
+                <i class="fa fa-circle fa-2x"></i>
+                <a href='https://account.activedirectory.windowsazure.com/applications/signin/7cc7482b-41c0-41bf-914c-6648a7db717b?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">OHH</a>
+                <ul class="hidden"></ul>
+            </li>
+            <li>
+                <i class="fa fa-circle fa-2x"></i>
+                <a href='https://account.activedirectory.windowsazure.com/applications/signin/4792ba22-7ac0-4c64-bdd0-c21aca6ae69c?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">Aerocare</a>
+                <ul class="hidden"></ul>
+            </li>
+            <li>
+                <i class="fa fa-circle fa-2x"></i>
+                Myapps
+                <ul class="hidden">
+                    <li><a href='https://launcher.myapps.microsoft.com/api/signin/438d4908-e073-47b6-ab34-c5d155eba961?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">Parachute</a></li>
+                    <li><a href='https://account.activedirectory.windowsazure.com/applications/signin/82e5a33a-010a-4e51-ae16-b640c34b0f99?tenantId=1ddbb8f2-1790-4f35-ab55-54465ce0a9cc' style="color: White;">Purecloud</a></li>
+                    <li><a href='https://outlook.office.com/owa/?realm=adapthealth.com&exsvurl=1&ll-cc=1033&modurl=0&login_hint=raymond.tariao@adapthealth.com' style="color: White;">Outlook</a></li>
+                    <li><a href='https://aka.ms/mstfw?login_hint_safe=raymond.tariao@adapthealth.com' style="color: White;">Teams</a></li>
+                    <li><a href='https://www.noridianmedicareportal.com/group/end-user/sameandsimilar' style="color: White;">Noridian</a></li>
+                    <li><a href='https://toolbox.adapthealth.com/home' style="color: White;">Same and Sim</a></li>
+                    
  <li><a href='https://portal.adapthealth.com/MainApp.aspx#' style="color: White;">iManage</a></li>
 <li><a href='https://oceanhomehealth.sharepoint.com/sites/eprescribe/Lists/Parachute%20Dashboards%20By%20State/AllItems.aspx' style="color: White;">Parachute Dashboard By State</a></li>
         </ul>
