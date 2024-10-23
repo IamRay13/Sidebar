@@ -1,3 +1,5 @@
+
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 .sidenav {
   position: fixed;
@@ -21,6 +23,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: 600;
+  text-align: center; /* Centering the text */
 }
 .sidenav .main-buttons > li {
   padding: 16px 52px;
@@ -75,3 +78,29 @@ html, body {
 .sidenav:hover, .hidden:hover {
   background-color: rgba(0, 128, 0, 0.5); /* Foggy, rainy weather green for both sidenav */
 }
+
+.quote-array {
+  display: none; /* Initially hidden */
+  text-align: center; /* Centering the quotes */
+}
+
+@keyframes rotateQuotes {
+  0% { display: block; }
+  100% { display: none; }
+}
+
+<script>
+  const quotes = [    ""The fog is clearing; life is a matter of taste" ~ Frank Wedekind",    ""Sometimes when you lose your way in the fog, you end up in a beautiful place! Don’t be afraid of getting lost!" - Mehmet Murat Ildan",    ""The weather varies between heavy fog and pale sunshine; my thoughts follow the exact same process." - Virginia Woolf",    ""When life is foggy, path is unclear, and mind is dull, remember your breath. It has the power to give you the peace. It has the power to resolve the unsolved equations of life." - Amit Ray"  ];
+
+  let currentQuoteIndex = 0;
+
+  function rotateQuotes() {
+    const quoteElements = document.querySelectorAll('.quote-array');
+    quoteElements.forEach((quote, index) => {
+      quote.style.display = index === currentQuoteIndex ? 'block' : 'none';
+    });
+    currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+  }
+
+  setInterval(rotateQuotes, 60000); // Rotate every minute
+</script>
