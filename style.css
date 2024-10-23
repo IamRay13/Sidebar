@@ -71,3 +71,11 @@ body {
 html, body {
   height: 100%;
 }
+
+/* New styles for the second sidenav option */
+.sidenav.active {
+  background-color: black; /* Total black for the first sidenav */
+}
+.sidenav.active .main-buttons {
+  color: black; /* Black fonts for the first sidenav */
+}
