@@ -1,4 +1,5 @@
 const quotes = [
+    "The fog is clearing; life is a matter of taste" ~ Frank Wedekind",
     "Sometimes when you lose your way in the fog, you end up in a beautiful place! Don’t be afraid of getting lost! - Mehmet Murat Ildan",
     "The weather varies between heavy fog and pale sunshine; my thoughts follow the exact same process. - Virginia Woolf",
     "When life is foggy, path is unclear, and mind is dull, remember your breath. It has the power to give you the peace. It has the power to resolve the unsolved equations of life. - Amit Ray"
