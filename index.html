@@ -23,13 +23,16 @@ left: 50%;
 transform: translate(-50%, -50%);      
 margin: 10px; /* Optional: Adds some space from the edges */  }
 
-    body {
-        background-image: url('IMG_6275.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-	background-position: bottom; /* This will position the image at the bottom of the body */ 
+body {
+    background-image: url('IMG_6275.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center; /* This will center the image both vertically and horizontally */
+    height: 100vh; /* Ensures the background image fills the entire viewport height */
+    margin: 0; /* Removes default margin */
 }
+
 
 .handwritten { 
 font-family: 'Homemade Apple', cursive; font-size: 24px; 
